@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chemistry Quiz</title>
+		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script src="js/modernizr.custom.79639.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">
+
+			<div class="menu-panel">
+				<h3>Judul Materi</h3>
+				<ul id="menu-toc" class="menu-toc">
+					<li class="menu-toc-current"><a href="#item1">Materi 1</a></li>
+					<li><a href="#item2">Materi 2</a></li>
+					<li><a href="#item3">Materi 3</a></li>
+					<li><a href="#item4">Materi 4</a></li>
+					<li><a href="#item5">Materi 5</a></li>
+				</ul>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>Materi 1 : input </h2>
+								<p>Input adalah data yang dimasukkan ke computer agar bisa diproses. Input mencakup instruksi program yang diterima CPU setelah ada perintah dari pengguna. Sedangkan output menunjuk pada hasil pemrosesan, yaitu informasi yang terkirim ke layar atau printer, untuk disimpan, atau dikirim ke computer lain di jaringan.</p>
+                                <p>Contoh dari Alat Input adalah :Keyboard, mouse, scanner, joystick, webcam, light pen, dll.</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>Materi 2 : output</h2>
+								<p>Alat output adalah alat-alat yang berfungsi mengeluarkan data-data yang berbentuk informasi yang dibutuhkan.</p>
+                                <p>Macam macam perangkat output : monitor, Printer, Plotter, speaker, proyektor</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>Materi 3 : mesin pencari</h2>
+								<p>Mesin pencari web (bahasa Inggris: web search engine) adalah program komputer yang dirancang untuk melakukan pencarian atas berkas-berkas yang tersimpan dalam layanan www, ftp, publikasi milis, ataupun news group dalam sebuah ataupun sejumlah komputer peladen dalam suatu jaringan. Search engine merupakan perangkat pencari informasi dari dokumen-dokumen yang tersedia. Hasil pencarian umumnya ditampilkan dalam bentuk daftar yang seringkali diurutkan menurut tingkat akurasi ataupun rasio pengunjung atas suatu berkas yang disebut sebagai hits. Informasi yang menjadi target pencarian bisa terdapat dalam berbagai macam jenis berkas seperti halaman situs web, gambar, ataupun jenis-jenis berkas lainnya. Beberapa mesin pencari juga diketahui melakukan pengumpulan informasi atas data yang tersimpan dalam suatu basisdata ataupun direktori web.</p>
+                                <p>Mesin pencari web diantaranya: Bing, Google, MSN Search, Yahoo, dll.</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller">
+								<h2>Materi 4 : android</h2>
+								<p>Android (/ˈæn.drɔɪd/; AN-droyd) adalah sistem operasi berbasis Linux yang dirancang untuk perangkat bergerak layar sentuh seperti telepon pintar dan komputer tablet.[11] Android awalnya dikembangkan oleh Android, Inc., dengan dukungan finansial dari Google, yang kemudian membelinya pada tahun 2005.[12] Sistem operasi ini dirilis secara resmi pada tahun 2007, bersamaan dengan didirikannya Open Handset Alliance, konsorsium dari perusahaan-perusahaan perangkat keras, perangkat lunak, dan telekomunikasi yang bertujuan untuk memajukan standar terbuka perangkat seluler.[13] Ponsel Android pertama mulai dijual pada bulan Oktober 2008.[14]</p>
+                                <p>kita dapat mengunduh beberapa aplikasi berbasis android di Play Store</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item5">
+						<div class="content">
+							<div class="scroller">
+								<h2>Materi 5 : booting</h2>
+								<p>Pengebutan (bahasa Inggris: booting) adalah mengacu kepada proses awal menyalakan komputer saat semua register prosesor diatur kosong, dan status mikroprosesor/prosesor diatur tata ulang. Kemudian address 0xFFFF dimuat di segmen sandi (code segment) dan instruksi yang terdapat pada alamat address 0xFFFF tersebut dieksekusi.</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Daftar Materi</span>
+
+			</div>
+
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+	</body>
+</html>
